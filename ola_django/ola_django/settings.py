@@ -76,8 +76,10 @@ WSGI_APPLICATION = 'ola_django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'oladjango',
+        # 'ENGINE': 'django.db.backends.mysql',
+        # 'NAME': 'oladjango',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'memory',
         'USER': 'root',
         'PASSWORD': '9%Q$1Jij5Bzv',
         'HOST': 'localhost',
