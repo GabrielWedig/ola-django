@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pessoas</title>
+</head>
+<body>
+    <h1>Detalhe Pessoa</h1>
+
+    <ul>
+        <li>Nome: {{ pessoa.nome }}</li>
+        <li>Idade: {{ pessoa.idade }}</li>
+        <li>Email: {{ pessoa.email }}</li>
+    </ul>
+
+    <a href="{% url 'listar_pessoas' %}">Voltar</a>
+</body>
+</html>

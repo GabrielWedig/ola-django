@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, ListView, UpdateView, DeleteView
+from django.views.generic import CreateView, ListView, UpdateView, DetailView
 from .forms import PessoaForm
 from .models import Pessoa
 
@@ -20,8 +20,7 @@ class PessoaUpdateView(UpdateView):
     template_name = 'editar_pessoa.html'
     success_url = reverse_lazy('listar_pessoas')
 
-class PessoaDeleteView(DeleteView):
+class PessoaDetailView(DetailView):
     model = Pessoa
-    # template_name = 'editar_pessoa.html'
-    success_url = reverse_lazy('listar_pessoas')
+    template_name = 'detalhar_pessoa.html'
     
