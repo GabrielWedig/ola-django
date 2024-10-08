@@ -11,6 +11,7 @@
         <li>Nome: {{ pessoa.nome }}</li>
         <li>Idade: {{ pessoa.idade }}</li>
         <li>Email: {{ pessoa.email }}</li>
+        <li>Tipo Pessoa: {{ pessoa.tipo_pessoa.nome }}</li>
     </ul>
 
     <a href="{% url 'listar_pessoas' %}">Voltar</a>
